@@ -1,10 +1,10 @@
 <h1>MoviesProject</h1>
 <ul>
-  <li>프로젝트 주제 : 영화 예매 프로그램</li>
-  <li>개발 기간 : 2019.09.04(수) ~ 2019.09.09(화)</li>
-  <li>개발 인원 : 5명</li>
-  <li>개발 환경 : javaEE, Eclipse, Oracle, javaFX, JSOUP </li>
-  <li>본인 개발 Part<br>
+  <li><b>프로젝트 주제 : </b>영화 예매 프로그램</li>
+  <li><b>개발 기간 : </b>2019.09.04(수) ~ 2019.09.09(화)</li>
+  <li><b>개발 인원 : </b>5명</li>
+  <li><b>개발 환경 : </b>javaEE, Eclipse, Oracle, javaFX, JSOUP </li>
+  <li><b>본인 개발 Part</b><br>
   -예매시 좌석 선택 기능 구현<br>
     1) 예매 페이지 로드시, DB에 예매기록이 있다면 좌석 색상 변경, 버튼 비활성화 -> 좌석 선택 불가<br>
     2) 어른 / 청소년 나이별로 인원 선택<br>
