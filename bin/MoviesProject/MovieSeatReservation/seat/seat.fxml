@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #777777;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MoviesProject.MovieSeatReservation.seat.SeatController">
+   <children>
+      <Button fx:id="resetBtn" layoutX="299.0" layoutY="77.0" mnemonicParsing="false" onAction="#runButtons" style="-fx-background-color: a6a6a6; -fx-background-radius: 10;" text="다시 선택하기" textFill="WHITE" />
+      <Button fx:id="reserveBtn" layoutX="655.0" layoutY="504.0" mnemonicParsing="false" onAction="#reserve" prefHeight="79.0" prefWidth="126.0" style="-fx-background-color: a6a6a6; -fx-background-radius: 10;" text="결제하기" textFill="WHITE" />
+      <VBox layoutX="58.0" layoutY="77.0" prefHeight="93.0" prefWidth="259.0">
+         <children>
+            <HBox prefHeight="46.0" prefWidth="210.0">
+               <children>
+                  <Label minHeight="0.0" prefHeight="30.0" prefWidth="50.0" text="어   른" textFill="WHITE" />
+                  <ToggleButton fx:id="adult01" mnemonicParsing="false" onAction="#runAgeGroup" text="1" textFill="#686464">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="adultGroup" />
+                     </toggleGroup>
+                  </ToggleButton>
+                  <ToggleButton fx:id="adult02" mnemonicParsing="false" onAction="#runAgeGroup" text="2" textFill="#686864" toggleGroup="$adultGroup">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </ToggleButton>
+                  <ToggleButton fx:id="adult03" mnemonicParsing="false" onAction="#runAgeGroup" text="3" textFill="#686864" toggleGroup="$adultGroup">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </ToggleButton>
+                  <ToggleButton fx:id="adult04" mnemonicParsing="false" onAction="#runAgeGroup" text="4" textFill="#686864" toggleGroup="$adultGroup">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </ToggleButton>
+                  <ToggleButton fx:id="adult05" mnemonicParsing="false" onAction="#runAgeGroup" text="5" textFill="#686864" toggleGroup="$adultGroup" />
+               </children>
+            </HBox>
+            <HBox prefHeight="37.0" prefWidth="210.0">
+               <children>
+                  <Label prefHeight="29.0" prefWidth="50.0" text="청소년" textFill="WHITE" />
+                  <ToggleButton fx:id="teen01" mnemonicParsing="false" onAction="#runAgeGroup" text="1" textFill="#686864">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="teenGroup" />
+                     </toggleGroup>
+                  </ToggleButton>
+                  <ToggleButton fx:id="teen02" mnemonicParsing="false" onAction="#runAgeGroup" text="2" textFill="#686864" toggleGroup="$teenGroup">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </ToggleButton>
+                  <ToggleButton fx:id="teen03" mnemonicParsing="false" onAction="#runAgeGroup" text="3" textFill="#686864" toggleGroup="$teenGroup">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </ToggleButton>
+                  <ToggleButton fx:id="teen04" mnemonicParsing="false" onAction="#runAgeGroup" text="4" textFill="#686864" toggleGroup="$teenGroup">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </ToggleButton>
+                  <ToggleButton fx:id="teen05" mnemonicParsing="false" onAction="#runAgeGroup" text="5" textFill="#686864" toggleGroup="$teenGroup" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="39.0" layoutY="234.0" prefHeight="314.0" prefWidth="298.0">
+         <children>
+            <HBox prefHeight="50.0" prefWidth="248.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="35.0" text="A" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button fx:id="a01" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets left="10.0" right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="a02" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="a03" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="a04" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="a05" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="a06" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="a07" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="248.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="35.0" text="B" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button fx:id="b01" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets left="10.0" right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="b02" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="b03" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="b04" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="b05" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="b06" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="b07" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="248.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="35.0" text="C" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button fx:id="c01" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets left="10.0" right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="c02" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="c03" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="c04" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="c05" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="c06" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="c07" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="248.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="35.0" text="D" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button fx:id="d01" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets left="10.0" right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="d02" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="d03" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="d04" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="d05" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="d06" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="d07" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="248.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="35.0" text="E" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button fx:id="e01" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets left="10.0" right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="e02" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="e03" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="e04" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="e05" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="e06" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="e07" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="248.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="35.0" text="F" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button fx:id="f01" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets left="10.0" right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="f02" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="f03" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="f04" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="f05" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="f06" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="f07" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="313.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="35.0" text="G" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button fx:id="g01" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets left="10.0" right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="g02" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="g03" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="g04" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="g05" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="g06" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="g07" mnemonicParsing="false" onAction="#runReservationInfo" prefHeight="30.0" prefWidth="30.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="39.0" prefWidth="313.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="35.0" text="1" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="35.0" text="2" textFill="WHITE" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="35.0" text="3" textFill="WHITE" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="35.0" text="4" textFill="WHITE" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="35.0" text="5" textFill="WHITE" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="35.0" text="6" textFill="WHITE" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="35.0" text="7" textFill="WHITE" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <ImageView fx:id="imgView" fitHeight="229.0" fitWidth="188.0" layoutX="598.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true" />
+      <VBox layoutX="348.0" layoutY="149.0" prefHeight="284.0" prefWidth="226.0">
+         <children>
+            <HBox prefHeight="60.0" prefWidth="90.0">
+               <children>
+                  <Label fx:id="movieName" alignment="CENTER" prefHeight="78.0" prefWidth="227.0" style="-fx-border-width: 0 0 3; -fx-border-color: white; -fx-padding: 0 0 3;" text="Label" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="60.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="90.0" style="-fx-border-width: 0 3 0 0; -fx-border-color: a6a6a6; -fx-padding: 0 13 0 0;" text="상  영  관 " textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin></Label>
+                  <Label fx:id="placeTable" prefHeight="25.0" prefWidth="137.0" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="5.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding></Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="60.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="90.0" style="-fx-border-width: 0 3 0 0; -fx-border-color: a6a6a6; -fx-padding: 0 13 0 0;" text="상영 날짜 " textFill="WHITE">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin></Label>
+                  <Label fx:id="movieDate" prefHeight="25.0" prefWidth="139.0" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="5.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding></Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="60.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="90.0" style="-fx-border-width: 0 3 0 0; -fx-border-color: a6a6a6; -fx-padding: 0 13 0 0;" text="상영 시간 " textFill="WHITE">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin></Label>
+                  <Label fx:id="movieTime" prefHeight="25.0" prefWidth="136.0" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="5.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding></Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="seat" alignment="CENTER" prefHeight="25.0" prefWidth="90.0" style="-fx-border-width: 0 3 0 0; -fx-border-color: a6a6a6; -fx-padding: 0 13 0 0;" text="남은 좌석 " textFill="WHITE">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin></Label>
+                  <Label fx:id="remainSeat" alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="136.0" text="Label" textFill="#313866" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox layoutX="348.0" layoutY="447.0" prefHeight="136.0" prefWidth="315.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="50.0" prefWidth="100.0" text="총 금액 " textFill="WHITE" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="85.0" prefWidth="100.0" text="선택한 좌석 " textFill="WHITE" />
+               </children>
+            </VBox>
+            <VBox prefHeight="136.0" prefWidth="214.0">
+               <children>
+                  <Label fx:id="totalPrice" prefHeight="49.0" prefWidth="216.0" textFill="#d00808">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Label>
+                  <Label fx:id="selectNum" prefHeight="88.0" prefWidth="214.0" textFill="WHITE" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Label alignment="CENTER" ellipsisString="2" graphicTextGap="50.0" layoutX="105.0" layoutY="194.0" lineSpacing="2.0" opacity="0.52" prefWidth="200.0" text="S C R E E N">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="40.0" prefWidth="800.0" style="-fx-background-color: #313866;">
+         <children>
+            <Label fx:id="myinfo" layoutX="81.0" layoutY="12.0" prefHeight="15.0" prefWidth="188.0" text="Label" textFill="WHITE" />
+            <Text layoutX="19.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome! , " />
+            <Label fx:id="setMyinfo" layoutX="666.0" layoutY="12.0" onMouseClicked="#mypage" style="-fx-border-width: 0 2 0 0; -fx-padding: 0 10 0 0; -fx-border-color: #f48024;" text="My page" textFill="#dddddd" />
+            <Label fx:id="logoutbtn" layoutX="733.0" layoutY="12.0" onMouseClicked="#logoutbtn" text="Logout" textFill="#dddddd" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="backBtn" layoutX="7.0" layoutY="554.0" mnemonicParsing="false" onAction="#prevbtn" prefHeight="40.0" prefWidth="110.0" style="-fx-background-color: a6a6a6; -fx-background-radius: 10;" text="이전페이지" textFill="WHITE" />
+   </children>
+</AnchorPane>

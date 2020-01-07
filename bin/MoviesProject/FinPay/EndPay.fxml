@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #BDBDBD;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox layoutX="3.0" layoutY="499.0" prefHeight="100.0" prefWidth="794.0" style="-fx-background-color: grey;">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <VBox layoutX="597.0" layoutY="5.0" prefHeight="488.0" prefWidth="200.0" style="-fx-background-color: grey;">
+         <padding>
+            <Insets left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <VBox layoutX="3.0" layoutY="5.0" prefHeight="488.0" prefWidth="585.0" style="-fx-background-color: grey;">
+         <children>
+            <Label prefHeight="145.0" prefWidth="588.0" text="예매가 완료되었습니다.">
+               <padding>
+                  <Insets left="20.0" top="50.0" />
+               </padding>
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

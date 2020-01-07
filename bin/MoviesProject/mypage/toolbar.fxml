@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="40.0" prefWidth="800.0" style="-fx-background-color: #313866;" xmlns="http://javafx.com/javafx/8.0.221" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="myinfo" layoutX="76.0" layoutY="12.0" prefHeight="14.0" prefWidth="35.0" text="Label" textFill="#dddddd" />
+      <Text layoutX="14.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome! , " />
+      <Label layoutX="661.0" layoutY="12.0" style="-fx-border-width: 0 2 0 0; -fx-padding: 0 10 0 0; -fx-border-color: #f48024;" text="My page" textFill="#dddddd" />
+      <Label layoutX="728.0" layoutY="12.0" text="Logout" textFill="#dddddd" />
+   </children>
+</AnchorPane>

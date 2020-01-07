@@ -1,0 +1,23 @@
+
+#fxseatlist {-fx-background-insets: 0; -fx-padding: 0; -fx-background-color: #7f7f7f;}
+#fxseatlist .list-cell {
+    -fx-background-color: #7f7f7f;
+    -fx-font-size:15.0;
+}
+
+
+#fxseatlist .list-cell:selected{
+    -fx-background-color: #7f7f7f;
+}
+
+
+/*
+.text-field {
+    -fx-background-color: -fx-text-box-border, -fx-background ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;
+}
+.text-field:focused {
+    -fx-background-color: -fx-focus-color, -fx-background ;
+}
+ */

@@ -1,0 +1,32 @@
+
+
+
+.text-field {
+    -fx-background-color: #fff ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;
+    
+}
+.text-field:focused {
+    -fx-background-color: #f48024;
+    -fx-text-fill: #fff;
+}
+
+.button { -fx-background-color: #f48024; }
+
+#mainPane { -fx-background-color: #313866; -fx-border-color: #A17E41; -fx-border-width : 10 10 10 10;}
+
+#newUser:hover {
+    -fx-text-fill: #f48024;
+}
+
+/*
+.text-field {
+    -fx-background-color: -fx-text-box-border, -fx-background ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;
+}
+.text-field:focused {
+    -fx-background-color: -fx-focus-color, -fx-background ;
+}
+ */
